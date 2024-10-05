@@ -24,5 +24,7 @@ namespace mf_dev_backend_2_2024.Models
         [Required(ErrorMessage = "Obigatório informar o ano do Modelo")]
         [Display(Name = "Ano do Modelo")]
         public int AnoModelo { get; set; }
+
+        public ICollection<Consumo> Consumos { get; set; }
     }
 }

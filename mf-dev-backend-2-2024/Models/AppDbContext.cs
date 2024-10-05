@@ -8,6 +8,10 @@ namespace mf_dev_backend_2_2024.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Veiculo> Veiculos { get; set; }
+
+        public DbSet<Consumo> Consumos { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 
     //public class AppDbContext : DbContext
